@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#menu{
+    display: none;
+}
+
+.navbar{
+    padding: 0.5rem;
+    box-shadow: 1px 1px 1px 0.1rem grey;
+}
+
+#responsive-search{
+    display: none;
+}
+
+.up-header>p{
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.up-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    height: 1.7rem;
+    width: 30rem;
+    gap: 1rem;
+    padding: 0.7rem;
+    border: 2px solid black;
+    border-radius: 1.55rem;
+    border: 2px solid #708090; 
+}
+
+.searchtext{
+    height: 1.5rem;
+    width: 8em;
+    border: none;
+    outline: none;
+}
+
+.icons{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #0805c2;
+    color: black;
+}
+
+.nav-extras{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.round-div{
+    border-radius: 50%;
+    /* background-color: rgb(207, 177, 246); */
+    padding: 0.5rem;
+    background-color: white;
+}
+
+#shop-div{
+    position: relative;
+    padding: 0.8rem;
+}
+
+#user-div{
+    padding: 0.8rem;
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.3em;
+    background-color: rgb(85, 119, 254);
+    background-color: rgb(254, 183, 4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: azure;
+}
+
+.list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 1rem; /* Space between links */
+}
+
+.list li {
+    position: relative; /* For positioning pseudo-elements */
+}
+
+.list li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Default link color */
+    padding: 0.5rem 1rem; /* Add padding */
+    transition: color 0.3s; /* Smooth transition for color changes */
+}
+
+.list li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Active link styling (optional) */
+.list li a.active {
+    font-weight: bold; /* Highlight the active link */
+    color: #007BFF; /* Active color */
+}
+
+
+@media (max-width: 885px) {
+    .navlink{
+        display: none; /* Hide the navlink class below 885px */
+    }
+
+    #user-div{
+        display: none;
+    }
+
+    .up-header>p{
+        display: block;
+    }
+    #menu{
+        display: inline;
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .searchbar{
+        display: none;
+    }
+
+    #responsive-search{
+        display: block;
+    }
+
+    .header-logo{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+    }
+
+    .up-header>p{
+        font-size: 1.15rem;
+        font-weight: 800;
+    }
+}
